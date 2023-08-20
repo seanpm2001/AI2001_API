@@ -1,0 +1,42 @@
+New AI2001 API under development
+Future plans for 3rd party GPT-2 and GPT-3 support (although a bit outdated, they can still be useful for historical purposes) GPT-4 cannot be included, as it is proprietary software
+
+AI2001
+
+Dataset handling modes
+
+3PARTY.GPT2
+3PARTY.GPT3
+
+Modes (actions)
+
+🎞️ - Indicates this works in video mode
+🖼️ - Indicates this works in image mode
+🎵️ - Indicates this works in audio mode
+📃️ - Indicates this works in text mode
+
+Classification 🎞️🖼️🎵️📃️
+Detection 🎞️🖼️🎵️📃️
+Optimization 🎞️🖼️🎵️📃️
+Upscaling 🎞️🖼️🎵️
+Downscaling 🎞️🖼️🎵️
+Filtering 🎞️🖼️🎵️📃️
+Splitting 🎞️🖼️🎵️📃️
+Cropping 🎞️🖼️🎵️
+Realism 🎞️🖼️🎵️
+Programming 🎞️🖼️📃️
+Translating 🎞️🖼️🎵️📃️
+Text entry 🎵️📃️
+Converting 🎞️🖼️🎵️📃️
+Noise reduction 🎵️
+
+Modes (category)
+
+Video mode 🎞️
+Image mode 🖼️
+Audio mode 🎵️
+Text mode 📃️
+
+Commands
+
+Dataset integration

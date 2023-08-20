@@ -1,0 +1,176 @@
+New AI2001 API under development
+Future plans for 3rd party GPT-2 and GPT-3 support (although a bit outdated, they can still be useful for historical purposes) GPT-4 cannot be included, as it is proprietary software
+
+AI2001 API
+
+Implementation language: Python
+Secondary languages: R, Julia, Rust, Cython
+
+Dataset handling modes
+
+3PARTY.GPT2
+3PARTY.GPT3
+
+Modes (actions)
+
+🎞️ - Indicates this works in video mode
+🖼️ - Indicates this works in image mode
+🎵️ - Indicates this works in audio mode
+📃️ - Indicates this works in text mode
+
+Classification 🎞️🖼️🎵️📃️
+Detection 🎞️🖼️🎵️📃️
+Optimization 🎞️🖼️🎵️📃️
+Upscaling 🎞️🖼️🎵️
+Downscaling 🎞️🖼️🎵️
+Filtering 🎞️🖼️🎵️📃️
+Splitting 🎞️🖼️🎵️📃️
+Cropping 🎞️🖼️🎵️
+Realism 🎞️🖼️🎵️
+Programming 🎞️🖼️📃️
+Translating 🎞️🖼️🎵️📃️
+Text entry 🎵️📃️
+Converting 🎞️🖼️🎵️📃️
+Noise reduction 🎵️
+
+Modes (category)
+
+Video mode 🎞️
+Image mode 🖼️
+Audio mode 🎵️
+Text mode 📃️
+
+Commands
+
+
+Dataset integration
+
+Flags
+
+--classification | --videos
+--classification | --images
+--classification | --audio
+--classification | --documents
+
+--detection | --videos
+--detection | --images
+--detection | --audio
+--detection | --documents
+
+--optimization | --videos
+--optimization | --images
+--optimization | --audio
+--optimization | --documents
+
+
+--upscale | --videos
+--upscale | --images
+--upscale | --audio
+--upscale | --documents # return: invalid
+
+Additional options
+
+# Videos
+Define new resolution (X):
+Define new resolution (Y):
+Define new framerate:
+# If any fields are left empty, it will keep it the same as the original
+
+# For 3D videos (proposal only for now)
+
+Define new resolution (X):
+Define new resolution (Y):
+Define new resolution (Z):
+Define new framerate:
+
+# If any fields are left empty, it will keep it the same as the original
+
+# A lot of options missing, as I don't know how to enhance 3D videos yet.
+
+# Images
+Define new resolution:
+Define new framerate:
+# If either are left empty, it will keep it the same as the original
+
+# Audio
+Define new bitrate:
+Define action: # Valid actions: Filtering, Realism, Noise reduction
+
+# Documents
+Documents cannot be upscaled. Only videos, images, and audio can be upscaled.
+
+--downscale | --videos
+--downscale | --images
+--downscale | --audio
+--downscale | --documents # return: invalid
+
+Additional options
+
+# Videos
+Define new resolution (X):
+Define new resolution (Y):
+Define new framerate:
+# If any fields are left empty, it will keep it the same as the original
+
+# For 3D videos (proposal only for now)
+
+Define new resolution (X):
+Define new resolution (Y):
+Define new resolution (Z):
+Define new framerate:
+
+# If any fields are left empty, it will keep it the same as the original
+
+# A lot of options missing, as I don't know how to enhance 3D videos yet.
+
+# Images
+Define new resolution:
+Define new framerate:
+# If either are left empty, it will keep it the same as the original
+
+# Audio
+Define new bitrate:
+Define action: # Valid actions: Filtering, Realism, Noise reduction
+
+# Documents
+Documents cannot be upscaled. Only videos, images, and audio can be upscaled.
+
+--prompts | --programming
+
+--Detection 🎞️🖼️🎵️📃️
+Optimization 🎞️🖼️🎵️📃️
+Upscaling 🎞️🖼️🎵️
+Downscaling 🎞️🖼️🎵️
+Filtering 🎞️🖼️🎵️📃️
+Splitting 🎞️🖼️🎵️📃️
+Cropping 🎞️🖼️🎵️
+Realism 🎞️🖼️🎵️
+Programming 🎞️🖼️📃️
+Translating 🎞️🖼️🎵️📃️
+Text entry 🎵️📃️
+Converting 🎞️🖼️🎵️📃️
+Noise reduction 🎵️
+
+SCRAP THIS:
+
+$ ai2001()
+> # AI2001 session started
+mode = linguistics
+> > # Mode set to Linguistics
+help()
+> > return help()
+classification /AI2001/?type=dir # Starts classifying a set of images in a folder/directory
+
+
+
+Prompts
+
+$ ai2001()
+mode = chatbot()
+# This will open a chatbot session
+
+
+
+help()
+# Work in progress
+
